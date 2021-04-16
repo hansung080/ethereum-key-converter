@@ -1,0 +1,20 @@
+#!/bin/sh
+
+# Resolve KEYCONV_HOME in case that $0 is this shell script or the symbolic link.
+if [ -z "$KEYCONV_HOME" ]; then
+    PRG="$0"
+    while [ -h "$PRG" ]; do
+        ls=$(ls -ld "$PRG")
+        link=$(expr "$ls" : '.*-> \(.*\)$')
+        if expr "$link" : '/.*' > /dev/null; then
+            PRG="$link"
+        else
+            PRG=$(dirname "$PRG")/"$link"
+        fi
+    done
+    cd "$(dirname "$PRG")/.." || exit 1
+    KEYCONV_HOME="$(pwd)"
+    cd - &> /dev/null || exit 1
+fi
+
+node $KEYCONV_HOME/index.js $@
