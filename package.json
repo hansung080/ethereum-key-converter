@@ -1,6 +1,6 @@
 {
   "name": "eth-keyconv",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Ethereum Key Converter",
   "main": "index.js",
   "scripts": {
