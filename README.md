@@ -26,7 +26,7 @@ Options:
   -h, --help              display help for command
 ```
 
-## Encrypt Private Key to Keystore File
+### Encrypt Private Key to Keystore File
 To encrypt the private key to the keystore file, enter the following command on your terminal.
 ```sh
 $ ./bin/keyconv \
@@ -34,7 +34,7 @@ $ ./bin/keyconv \
 -p pass0
 ```
 
-## Decrypt Private Key from Keystore File
+### Decrypt Private Key from Keystore File
 There are two ways to decrypt the private key from the keystore file.
 
 First way, specify the keystore filename and the password.
