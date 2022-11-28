@@ -1,15 +1,17 @@
 {
-  "name": "eth-keyconv",
-  "version": "0.0.1",
+  "name": "ethereum-key-converter",
+  "version": "1.0.0",
   "description": "Ethereum Key Converter",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
-    "ethereum key"
+    "ethereum",
+    "key",
+    "converter"
   ],
-  "author": "hansung",
+  "author": "hansung080",
   "license": "ISC",
   "dependencies": {
     "commander": "^5.1.0",

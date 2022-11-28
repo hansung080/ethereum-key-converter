@@ -6,13 +6,13 @@
 
 ## Clone Repo. & Install Dep.
 ```sh
-$ git clone https://github.com/hansung080/eth-keyconv.git
-$ cd eth-keyconv
+$ git clone https://github.com/hansung080/ethereum-key-converter.git
+$ cd ethereum-key-converter
 $ npm install
 ```
 
 ## Usage
-To print the eth-keyconv options, enter the help command on your terminal.
+To print the keyconv options, enter the help command on your terminal.
 ```sh
 $ ./bin/keyconv --help
 Usage: index [options]
@@ -37,14 +37,14 @@ $ ./bin/keyconv \
 ### Decrypt Private Key from Keystore File
 There are two ways to decrypt the private key from the keystore file.
 
-First way, specify the keystore filename and the password.
+In the first way, specify the keystore filename and the password.
 ```sh
 $ ./bin/keyconv \
 -f ./keystore/UTC--2021-03-15T07-14-09.702815000Z--6f8e4674c80c76833daa6fc1f19343c7a4909de8 \
 -p pass0
 ```
 
-Second way, specify the parent directory of keystore, the address, and the password.
+In the second way, specify the parent directory of keystore, the address, and the password.
 ```sh
 $ ./bin/keyconv \
 -d . \
